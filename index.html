@@ -1921,89 +1921,124 @@ New gist
     <svg text="gray" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-git-branch">
   <path fill-rule="evenodd" d="M11.75 2.5a.75.75 0 100 1.5.75.75 0 000-1.5zm-2.25.75a2.25 2.25 0 113 2.122V6A2.5 2.5 0 0110 8.5H6a1 1 0 00-1 1v1.128a2.251 2.251 0 11-1.5 0V5.372a2.25 2.25 0 111.5 0v1.836A2.492 2.492 0 016 7h4a1 1 0 001-1v-.628A2.25 2.25 0 019.5 3.25zM4.25 12a.75.75 0 100 1.5.75.75 0 000-1.5zM3.5 3.25a.75.75 0 111.5 0 .75.75 0 01-1.5 0z"></path>
 </svg>
-    <span class="css-truncate-target" data-menu-button="">00f5b4f9b8</span>
+    <span class="css-truncate-target" data-menu-button="">Puppet Master</span>
     <span class="dropdown-caret"></span>
   </summary>
 
   
 <div class="SelectMenu">
-<div class="SelectMenu-modal">
-  <header class="SelectMenu-header">
-    <span class="SelectMenu-title">Switch branches/tags</span>
-    <button class="SelectMenu-closeButton" type="button" data-toggle-for="branch-select-menu"><svg aria-label="Close menu" aria-hidden="false" role="img" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-x">
-  <path fill-rule="evenodd" d="M3.72 3.72a.75.75 0 011.06 0L8 6.94l3.22-3.22a.75.75 0 111.06 1.06L9.06 8l3.22 3.22a.75.75 0 11-1.06 1.06L8 9.06l-3.22 3.22a.75.75 0 01-1.06-1.06L6.94 8 3.72 4.78a.75.75 0 010-1.06z"></path>
+  <div class="SelectMenu-modal">
+    <header class="SelectMenu-header">
+      <span class="SelectMenu-title">Switch branches/tags</span>
+      <button class="SelectMenu-closeButton" type="button" data-toggle-for="branch-select-menu"><svg aria-label="Close menu" aria-hidden="false" role="img" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-x">
+    <path fill-rule="evenodd" d="M3.72 3.72a.75.75 0 011.06 0L8 6.94l3.22-3.22a.75.75 0 111.06 1.06L9.06 8l3.22 3.22a.75.75 0 11-1.06 1.06L8 9.06l-3.22 3.22a.75.75 0 01-1.06-1.06L6.94 8 3.72 4.78a.75.75 0 010-1.06z"></path>
 </svg></button>
-  </header>
+    </header>
 
-  <input-demux data-action="tab-container-change:input-demux#storeInput tab-container-changed:input-demux#updateInput" data-catalyst="">
-    <tab-container class="d-flex flex-column js-branches-tags-tabs" style="min-height: 0;">
-      <div class="SelectMenu-filter">
-        <input data-target="input-demux.source" id="context-commitish-filter-field" class="SelectMenu-input form-control" aria-owns="ref-list-branches" data-controls-ref-menu-id="ref-list-branches" autofocus="" autocomplete="off" aria-label="Find or create a branch…" placeholder="Find or create a branch…" type="text">
-      </div>
+    <input-demux data-action="tab-container-change:input-demux#storeInput tab-container-changed:input-demux#updateInput" data-catalyst="">
+      <tab-container class="d-flex flex-column js-branches-tags-tabs" style="min-height: 0;">
+        <div class="SelectMenu-filter">
+          <input data-target="input-demux.source" id="context-commitish-filter-field" class="SelectMenu-input form-control" aria-owns="ref-list-branches" data-controls-ref-menu-id="ref-list-branches" autofocus="" autocomplete="off" aria-label="Filter branches/tags" placeholder="Filter branches/tags" type="text">
+        </div>
 
-      <div class="SelectMenu-tabs" role="tablist" data-target="input-demux.control">
-        <button class="SelectMenu-tab" type="button" role="tab" aria-selected="true" tabindex="0">Branches</button>
-        <button class="SelectMenu-tab" type="button" role="tab" aria-selected="false" tabindex="-1">Tags</button>
-      </div>
+        <div class="SelectMenu-tabs" role="tablist" data-target="input-demux.control">
+          <button class="SelectMenu-tab" type="button" role="tab" aria-selected="true" tabindex="0">Branches</button>
+          <button class="SelectMenu-tab" type="button" role="tab" aria-selected="false" tabindex="-1">Tags</button>
+        </div>
 
-      <div role="tabpanel" id="ref-list-branches" data-filter-placeholder="Find or create a branch…" tabindex="" class="d-flex flex-column flex-auto overflow-auto">
-        <ref-selector type="branch" data-targets="input-demux.sinks" data-action="
-            input-entered:ref-selector#inputEntered
-            tab-selected:ref-selector#tabSelected
-            focus-list:ref-selector#focusFirstListMember
-          " query-endpoint="/ZipingL/dna/refs" can-create="" cache-key="v0:1657754522.524103" current-committish="MDBmNWI0ZjliODNkZjY5YjkwZDU1MDVkNTc4MmMzY2YzMTI4NjQwZQ==" default-branch="bWFpbg==" name-with-owner="WmlwaW5nTC9kbmE=" prefetch-on-mouseover="" data-catalyst="">
+        <div role="tabpanel" id="ref-list-branches" data-filter-placeholder="Filter branches/tags" tabindex="" class="d-flex flex-column flex-auto overflow-auto">
+          <ref-selector type="branch" data-targets="input-demux.sinks" data-action="
+              input-entered:ref-selector#inputEntered
+              tab-selected:ref-selector#tabSelected
+              focus-list:ref-selector#focusFirstListMember
+            " query-endpoint="/ZipingL/dna/refs" cache-key="v0:1663929981.391472" current-committish="bWFzdGVy" default-branch="bWFpbg==" name-with-owner="WmlwaW5nTC9kbmE=" prefetch-on-mouseover="" data-catalyst="">
 
-          <template data-target="ref-selector.fetchFailedTemplate"></template>
+            <template data-target="ref-selector.fetchFailedTemplate">
+              <div  style="overflow-y: auto; z-index:100; height: 350px;;" class="SelectMenu-message" data-index="{{ index }}">
+                <div style="font-size:7.5pt;  text-align:justify; line-height: 0.85; overflow-y: scroll; height: 328px;"><b>[C]</b> Could not find any sound leadership branching out into actions for Ziping Liu's concern resolutions at Amazon Corporate.</span></div>
 
-            <template data-target="ref-selector.noMatchTemplate"></template>
+               </div>
+            </template>
+
+              <template data-target="ref-selector.noMatchTemplate">
+    <div class="SelectMenu-message">Nothing to show</div>
+</template>
 
 
-          <div data-target="ref-selector.listContainer" role="menu" class="SelectMenu-list " data-pjax="#repo-content-pjax-container" data-turbo-frame="repo-content-turbo-frame" style="max-height: 330px;"><div style="position: relative; overflow: hidden; width: 100%; min-height: 100%; will-change: transform; height: 33px;"><div style="position:absolute; top:0; left:0; height:100%; width:100%; overflow:visible;">
-<a href="https://github.com/ZipingL/dna/blob/main/23andMe_Ancestry_Book.pdf" class="SelectMenu-item" role="menuitemradio" rel="nofollow" aria-checked="false" data-index="0">
-  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check SelectMenu-icon SelectMenu-icon--check">
-  <path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path>
+            <div data-target="ref-selector.listContainer" role="menu" class="SelectMenu-list " data-pjax="#repo-content-pjax-container" data-turbo-frame="repo-content-turbo-frame" style="max-height: 269.7px;"><div style="position: relative; overflow: hidden; width: 100%; min-height: 100%; will-change: transform; height: 108px;"><div style="position:absolute; top:0; left:0; height:100%; width:100%; overflow:visible;">
+  <a href="https://github.com/ZipingL/dna/tree/main" class="SelectMenu-item" role="menuitemradio" rel="nofollow" aria-checked="false" data-index="0">
+    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check SelectMenu-icon SelectMenu-icon--check">
+    <path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path>
 </svg>
-  <span class="flex-1 css-truncate css-truncate-overflow ">main</span>
-  <span class="Label Label--secondary flex-self-start">default</span>
-</a>
+    <span class="flex-1 css-truncate css-truncate-overflow ">main</span>
+    <span class="Label Label--secondary flex-self-start">default</span>
+  </a>
+
+  <a href="https://github.com/ZipingL/dna/tree/master" class="SelectMenu-item" role="menuitemradio" rel="nofollow" aria-checked="true" data-index="1">
+    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check SelectMenu-icon SelectMenu-icon--check">
+    <path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path>
+</svg>
+    <span class="flex-1 css-truncate css-truncate-overflow ">master</span>
+    <span hidden="" class="Label Label--secondary flex-self-start">default</span>
+  </a>
 <span></span></div></div></div>
 
-            <template data-target="ref-selector.itemTemplate"></template>
-
-
-            <footer class="SelectMenu-footer"><a href="https://github.com/ZipingL/dna/branches">View all branches</a></footer>
-        </ref-selector>
-
-      </div>
-
-      <div role="tabpanel" id="tags-menu" data-filter-placeholder="Find a tag" tabindex="" hidden="" class="d-flex flex-column flex-auto overflow-auto">
-        <ref-selector type="tag" data-action="
-            input-entered:ref-selector#inputEntered
-            tab-selected:ref-selector#tabSelected
-            focus-list:ref-selector#focusFirstListMember
-          " data-targets="input-demux.sinks" query-endpoint="/ZipingL/dna/refs" cache-key="v0:1657754522.524103" current-committish="MDBmNWI0ZjliODNkZjY5YjkwZDU1MDVkNTc4MmMzY2YzMTI4NjQwZQ==" default-branch="bWFpbg==" name-with-owner="WmlwaW5nTC9kbmE=" data-catalyst="">
-
-          <template data-target="ref-selector.fetchFailedTemplate"></template>
-
-          <template data-target="ref-selector.noMatchTemplate"></template>
-
-            <template data-target="ref-selector.itemTemplate"></template>
-
-
-          <div data-target="ref-selector.listContainer" role="menu" class="SelectMenu-list" data-pjax="#repo-content-pjax-container" data-turbo-frame="repo-content-turbo-frame">
-            <div class="SelectMenu-loading pt-3 pb-0 overflow-hidden" aria-label="Menu is loading">
-              <svg style="box-sizing: content-box; color: var(--color-icon-primary);" width="32" height="32" viewBox="0 0 16 16" fill="none" data-view-component="true" class="anim-rotate">
-<circle cx="8" cy="8" r="7" stroke="currentColor" stroke-opacity="0.25" stroke-width="2" vector-effect="non-scaling-stroke"></circle>
-<path d="M15 8a7.002 7.002 0 00-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" vector-effect="non-scaling-stroke"></path>
+              <template data-target="ref-selector.itemTemplate">
+  <a href="https://github.com/ZipingL/dna/tree/{{ urlEncodedRefName }}" class="SelectMenu-item" role="menuitemradio" rel="nofollow" aria-checked="{{ isCurrent }}" data-index="{{ index }}">
+    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check SelectMenu-icon SelectMenu-icon--check">
+    <path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path>
 </svg>
+    <span class="flex-1 css-truncate css-truncate-overflow {{ isFilteringClass }}">{{ refName }}</span>
+    <span hidden="{{ isNotDefault }}" class="Label Label--secondary flex-self-start">default</span>
+  </a>
+</template>
+
+
+              <footer class="SelectMenu-footer"><a href="/ZipingL/dna/branches">View all branches</a></footer>
+          </ref-selector>
+
+        </div>
+
+        <div role="tabpanel" id="tags-menu" data-filter-placeholder="Find a tag" tabindex="" hidden="" class="d-flex flex-column flex-auto overflow-auto">
+          <ref-selector type="tag" data-action="
+              input-entered:ref-selector#inputEntered
+              tab-selected:ref-selector#tabSelected
+              focus-list:ref-selector#focusFirstListMember
+            " data-targets="input-demux.sinks" query-endpoint="/ZipingL/dna/refs" cache-key="v0:1663929981.391472" current-committish="bWFzdGVy" default-branch="bWFpbg==" name-with-owner="WmlwaW5nTC9kbmE=" data-catalyst="">
+
+            <template data-target="ref-selector.fetchFailedTemplate">
+              <div class="SelectMenu-message" data-index="{{ index }}">Could not load tags</div>
+            </template>
+
+            <template data-target="ref-selector.noMatchTemplate">
+              <div class="SelectMenu-message" data-index="{{ index }}">Nothing to show</div>
+            </template>
+
+              <template data-target="ref-selector.itemTemplate">
+  <a href="https://github.com/ZipingL/dna/tree/{{ urlEncodedRefName }}" class="SelectMenu-item" role="menuitemradio" rel="nofollow" aria-checked="{{ isCurrent }}" data-index="{{ index }}">
+    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check SelectMenu-icon SelectMenu-icon--check">
+    <path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path>
+</svg>
+    <span class="flex-1 css-truncate css-truncate-overflow {{ isFilteringClass }}">{{ refName }}</span>
+    <span hidden="{{ isNotDefault }}" class="Label Label--secondary flex-self-start">default</span>
+  </a>
+</template>
+
+
+            <div data-target="ref-selector.listContainer" role="menu" class="SelectMenu-list" data-pjax="#repo-content-pjax-container" data-turbo-frame="repo-content-turbo-frame">
+              <div class="SelectMenu-loading pt-3 pb-0 overflow-hidden" aria-label="Menu is loading">
+                <svg style="box-sizing: content-box; color: var(--color-icon-primary);" width="32" height="32" viewBox="0 0 16 16" fill="none" data-view-component="true" class="anim-rotate">
+  <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-opacity="0.25" stroke-width="2" vector-effect="non-scaling-stroke"></circle>
+  <path d="M15 8a7.002 7.002 0 00-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" vector-effect="non-scaling-stroke"></path>
+</svg>
+              </div>
             </div>
-          </div>
-            <footer class="SelectMenu-footer"><a href="https://github.com/ZipingL/dna/tree/master">View all tags</a></footer>
-        </ref-selector>
-      </div>
-    </tab-container>
-  </input-demux>
-</div>
+              <footer class="SelectMenu-footer"><a href="/ZipingL/dna/tags">View all tags</a></footer>
+          </ref-selector>
+        </div>
+      </tab-container>
+    </input-demux>
+  </div>
 </div>
 
 </details>
@@ -2070,7 +2105,60 @@ New gist
 </div></div>
 
   
+<div class="d-sm-flex Box mb-3 Box-body color-bg-subtle">
+  <div class="d-flex flex-auto">
+        <div>
+          This branch is <span><a data-analytics-event="{&quot;category&quot;:&quot;Branch Infobar&quot;,&quot;action&quot;:&quot;Ahead Compare&quot;,&quot;label&quot;:&quot;ref_loc:bar;is_fork:false&quot;}" href="/ZipingL/dna/compare/main...master">5 commits ahead</a>, <a data-analytics-event="{&quot;category&quot;:&quot;Branch Infobar&quot;,&quot;action&quot;:&quot;Behind Compare&quot;,&quot;label&quot;:&quot;ref_loc:bar;is_fork:false&quot;}" href="/ZipingL/dna/compare/master...main">8 commits behind</a> main</span>.
+        </div>
+  </div>
+  <div class="d-flex flex-justify-end mt-2 mt-sm-0 ml-sm-3">
+      <details class="details-overlay details-reset position-relative">
+        <summary class="btn-link no-underline color-fg-muted" aria-haspopup="menu" role="button" data-analytics-event="{&quot;category&quot;:&quot;Branch Infobar&quot;,&quot;action&quot;:&quot;Open Contribute dropdown&quot;,&quot;label&quot;:&quot;ref_loc:contribute_dropdown;is_fork:false&quot;}">
+          <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-git-pull-request">
+    <path fill-rule="evenodd" d="M7.177 3.073L9.573.677A.25.25 0 0110 .854v4.792a.25.25 0 01-.427.177L7.177 3.427a.25.25 0 010-.354zM3.75 2.5a.75.75 0 100 1.5.75.75 0 000-1.5zm-2.25.75a2.25 2.25 0 113 2.122v5.256a2.251 2.251 0 11-1.5 0V5.372A2.25 2.25 0 011.5 3.25zM11 2.5h-1V4h1a1 1 0 011 1v5.628a2.251 2.251 0 101.5 0V5A2.5 2.5 0 0011 2.5zm1 10.25a.75.75 0 111.5 0 .75.75 0 01-1.5 0zM3.75 12a.75.75 0 100 1.5.75.75 0 000-1.5z"></path>
+</svg>
+          Contribute
+          <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-triangle-down">
+    <path d="M4.427 7.427l3.396 3.396a.25.25 0 00.354 0l3.396-3.396A.25.25 0 0011.396 7H4.604a.25.25 0 00-.177.427z"></path>
+</svg>
+        </summary>
+        <div class="position-relative">
+          <div class="dropdown-menu dropdown-menu-sw pb-0 branch-contribute-right branch-info-dropdown-size">
+            <ul class="list-style-none">
+              <li class="d-flex p-3">
+                <div class="mr-2">
+                  <div class="completeness-indicator completeness-indicator-problem">
+                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-git-pull-request">
+    <path fill-rule="evenodd" d="M7.177 3.073L9.573.677A.25.25 0 0110 .854v4.792a.25.25 0 01-.427.177L7.177 3.427a.25.25 0 010-.354zM3.75 2.5a.75.75 0 100 1.5.75.75 0 000-1.5zm-2.25.75a2.25 2.25 0 113 2.122v5.256a2.251 2.251 0 11-1.5 0V5.372A2.25 2.25 0 011.5 3.25zM11 2.5h-1V4h1a1 1 0 011 1v5.628a2.251 2.251 0 101.5 0V5A2.5 2.5 0 0011 2.5zm1 10.25a.75.75 0 111.5 0 .75.75 0 01-1.5 0zM3.75 12a.75.75 0 100 1.5.75.75 0 000-1.5z"></path>
+</svg>
+                  </div>
+                </div>
+                <div>
+                  <p class="text-bold mb-1">
+                      This branch is 5 commits ahead of main.
+                  </p>
+                  <p class="text-small color-fg-muted mb-0">
+                      Open a pull request to contribute your changes upstream.
+                  </p>
+                </div>
+              </li>
+              <li class="Box-row Box-row--gray p-3">
+                <div class="d-flex">
+                    <a href="/ZipingL/dna/compare/master" class="btn btn-block flex-1 mr-3 " data-analytics-event="{&quot;category&quot;:&quot;Branch Infobar&quot;,&quot;action&quot;:&quot;Compare&quot;,&quot;label&quot;:&quot;ref_loc:contribute_dropdown;is_fork:false&quot;}">
+                      Compare
+                    </a>
 
+                  <a href="/ZipingL/dna/compare/main...master?expand=1" class="btn btn-primary btn-block flex-1 " data-analytics-event="{&quot;category&quot;:&quot;Branch Infobar&quot;,&quot;action&quot;:&quot;Open pull request&quot;,&quot;label&quot;:&quot;ref_loc:contribute_dropdown;is_fork:false&quot;}">
+                    Open pull request
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </details>
+  </div>
+</div>
 
 
   <div class="Box d-flex flex-column flex-shrink-0 mb-3">
@@ -2083,10 +2171,10 @@ New gist
       </span>
       <div class="flex-1 d-flex flex-items-center ml-3 min-width-0">
         <div class="css-truncate css-truncate-overflow">
-          <a class="text-bold Link--primary" rel="author" data-hovercard-type="user" data-hovercard-url="/users/ZipingL/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/ZipingL">ZipingL</a>
+          <a class="text-bold Link--primary" rel="author" data-hovercard-type="user" data-hovercard-url="/users/ZipingL/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/ZipingL/dna/tree/master">ZipingL</a>
 
             <span class="markdown-title">
-              <a data-pjax="true" title="Add 23andMe Ancestry Book" class="Link--secondary" href="https://github.com/ZipingL/dna/commit/00f5b4f9b83df69b90d5505d5782c3cf3128640e">Add 23andMe Ancestry Book</a>
+              <a data-pjax="true" title="Add 23andMe Ancestry Book" class="Link--secondary" href="https://github.com/ZipingL/dna/tree/master">Add 23andMe Ancestry Book</a>
             </span>
         </div>
 
@@ -2098,7 +2186,7 @@ New gist
       <div class="ml-3 d-flex flex-shrink-0 flex-items-center flex-justify-end color-fg-muted no-wrap">
         <span class="d-none d-md-inline">
           <span>Latest commit</span>
-          <a class="text-small text-mono Link--secondary" href="https://github.com/ZipingL/dna/commit/00f5b4f9b83df69b90d5505d5782c3cf3128640e" data-pjax="">00f5b4f</a>
+          <a class="text-small text-mono Link--secondary" href="https://github.com/ZipingL/dna/tree/master" data-pjax="">00f5b4f</a>
           <span itemprop="dateModified"><relative-time datetime="2022-07-13T23:22:02Z" class="no-wrap" title="Jul 13, 2022, 6:22 PM CDT">on Jul 13</relative-time></span>
         </span>
 
