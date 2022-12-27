@@ -13,3 +13,7 @@ Such persons still think it wise to not take accoutnability and make prudent act
    
    
 ## [ziping.life](https://ajassy.cn/uighur)
+
+
+
+## You can view this code now converted into a react-app, [here](https://github.com/ZIPING-LIU-CORPORATION/react-dna-hub)
